@@ -43,6 +43,12 @@ docker build -t felicicar . && docker run --rm -p 8080:80 -e SMTP_USER=contact@f
 - En cas d'échec, regarder les logs du conteneur dans Coolify (lignes `[devis]`).
 - Vérifier l'adresse de l'hébergeur dans `public/mentions-legales.html` (Hostinger International Ltd, Larnaca, Chypre) par rapport à votre espace client.
 
+## Signature e-mail
+
+`signature/signature-mail.html` reprend le design du site. Ses images (`public/assets/mail/`) sont servies par felicicar.fr : elles ne s'affichent qu'une fois le site déployé.
+
+Pour l'installer : ouvrir le fichier dans un navigateur, tout sélectionner (Cmd+A), copier, puis coller dans les réglages de signature de la messagerie (Webmail Hostinger, Apple Mail, Gmail, Outlook).
+
 ## Modifier le contenu
 
 - Textes : `public/index.html`
