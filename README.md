@@ -47,4 +47,4 @@ docker build -t felicicar . && docker run --rm -p 8080:80 -e SMTP_USER=contact@f
 
 - Textes : `public/index.html`
 - Styles : `public/assets/styles.css`
-- Photo de la flotte : remplacer `public/assets/img/parking-aerien.jpg` (format portrait conseillé, au moins 1280 px de large), puis mettre à jour le crédit photo dans le pied de page et les mentions légales.
+- Photo de la flotte : remplacer `public/assets/img/voiture-electrique.jpg` (format portrait conseillé, au moins 1280 px de large), puis mettre à jour le crédit photo dans le pied de page et les mentions légales.
