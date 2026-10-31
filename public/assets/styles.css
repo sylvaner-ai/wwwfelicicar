@@ -1027,11 +1027,13 @@ a:hover { color: var(--indigo-hover); }
 }
 .steps::before { right: 20px; background: var(--frost); }
 .steps::after {
-  width: 0;
+  right: 20px;
   background: var(--gradient);
-  transition: width 1.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.6s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.steps.is-visible::after { width: calc(100% - 40px); }
+.steps.is-visible::after { transform: scaleX(1); }
 
 .step { position: relative; z-index: 1; }
 
@@ -1506,7 +1508,7 @@ a:hover { color: var(--indigo-hover); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
-  .steps::after { width: calc(100% - 40px); }
+  .steps::after { transform: scaleX(1); }
 }
 
 .fleet .headline { margin-bottom: 32px; }
