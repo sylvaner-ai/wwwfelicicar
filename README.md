@@ -45,7 +45,7 @@ docker build -t felicicar . && docker run --rm -p 8080:80 -e SMTP_USER=contact@f
 
 ## Signature e-mail
 
-`signature/signature-mail.html` reprend le design du site. Ses images (`public/assets/mail/`) sont servies par felicicar.fr : elles ne s'affichent qu'une fois le site déployé.
+`signature/signature-mail.html` reprend le design du site. Elle est autonome (aucune image : logo et barre en CSS) et sa largeur s'adapte aux téléphones. Outlook sur PC ignore les dégradés et les coins arrondis : il affiche le logo et la barre en indigo uni.
 
 Pour l'installer : ouvrir le fichier dans un navigateur, tout sélectionner (Cmd+A), copier, puis coller dans les réglages de signature de la messagerie (Webmail Hostinger, Apple Mail, Gmail, Outlook).
 

@@ -2,23 +2,30 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Signature e-mail Felicicar</title>
 </head>
-<body style="margin:0;padding:24px;background:#ffffff;">
+<body style="margin:0;padding:24px 16px;background:#ffffff;">
 <!--
-  Signature e-mail Felicicar.
-  Les images sont servies par le site (https://felicicar.fr/assets/mail/) : elles ne s'affichent
-  qu'une fois le site déployé. Styles en ligne et tableaux uniquement, pour Gmail et Outlook.
+  Signature e-mail Felicicar, autonome : aucune image, le logo et la barre sont en CSS.
+  Les dégradés ont une couleur de repli (indigo) pour les messageries qui les ignorent (Outlook sur PC).
+  Largeur fluide, plafonnée à 520 px : elle se resserre sur téléphone.
   Pour installer : ouvrir ce fichier dans un navigateur, tout sélectionner, copier, puis coller
   dans les réglages de signature du logiciel de messagerie.
 -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="520" style="width:520px;max-width:520px;border-collapse:collapse;font-family:'Inter Tight',Helvetica,Arial,sans-serif;color:#061b31;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;max-width:520px;border-collapse:collapse;font-family:'Inter Tight',Helvetica,Arial,sans-serif;color:#061b31;">
   <tr>
     <td style="padding:0 0 16px 0;">
       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
         <tr>
           <td valign="middle" style="padding:0 14px 0 0;">
-            <a href="https://felicicar.fr" style="text-decoration:none;"><img src="https://felicicar.fr/assets/mail/logo.png" width="48" height="48" alt="Felicicar" style="display:block;width:48px;height:48px;border:0;"></a>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+              <tr>
+                <td width="48" height="48" align="center" valign="middle" bgcolor="#533afd" style="width:48px;height:48px;background-color:#533afd;background-image:linear-gradient(135deg,#ff9f43 0%,#ff4f9a 40%,#9b5cff 75%,#533afd 100%);border-radius:12px;font-family:Helvetica,Arial,sans-serif;font-size:27px;line-height:48px;font-weight:700;color:#ffffff;text-align:center;">
+                  <a href="https://felicicar.fr" style="color:#ffffff;text-decoration:none;">F</a>
+                </td>
+              </tr>
+            </table>
           </td>
           <td valign="middle" style="font-family:'Inter Tight',Helvetica,Arial,sans-serif;">
             <div style="font-size:18px;line-height:24px;font-weight:500;color:#061b31;letter-spacing:-0.2px;">Sylvain Robert</div>
@@ -29,13 +36,11 @@
     </td>
   </tr>
   <tr>
-    <td style="padding:0;line-height:0;font-size:0;">
-      <img src="https://felicicar.fr/assets/mail/barre.png" width="520" height="3" alt="" style="display:block;width:520px;height:3px;border:0;">
-    </td>
+    <td height="3" bgcolor="#533afd" style="height:3px;padding:0;background-color:#533afd;background-image:linear-gradient(90deg,#533afd 0%,#9b5cff 40%,#ff4f9a 75%,#ff9f43 100%);font-size:0;line-height:0;">&nbsp;</td>
   </tr>
   <tr>
     <td style="padding:14px 0 0 0;font-family:'Inter Tight',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;color:#5a6a82;">
-      <span style="color:#533afd;font-weight:600;">1 à 24 mois</span>&nbsp;&nbsp;Location de véhicules en moyenne durée pour entreprises
+      <span style="color:#533afd;font-weight:600;white-space:nowrap;">1 à 24 mois</span>&nbsp;&nbsp;Location de véhicules en moyenne durée pour entreprises
     </td>
   </tr>
   <tr>
