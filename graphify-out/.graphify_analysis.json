@@ -12,22 +12,23 @@
       "composer_type"
     ],
     "1": [
-      "github_workflows_graphify",
-      "github_workflows_graphify_name",
-      "github_workflows_graphify_on",
-      "github_workflows_graphify_on_push",
-      "github_workflows_graphify_permissions",
-      "github_workflows_graphify_permissions_contents",
-      "github_workflows_graphify_push_branches",
-      "github_workflows_graphify_push_paths_ignore"
-    ],
-    "2": [
+      "github_workflows_graphify_env_graphify_force",
+      "github_workflows_graphify_steps_env",
       "github_workflows_graphify_steps_name",
       "github_workflows_graphify_steps_run",
       "github_workflows_graphify_steps_uses",
       "github_workflows_graphify_steps_with",
       "github_workflows_graphify_update_graph_steps",
       "github_workflows_graphify_with_fetch_depth"
+    ],
+    "2": [
+      "github_workflows_graphify",
+      "github_workflows_graphify_jobs",
+      "github_workflows_graphify_jobs_update_graph",
+      "github_workflows_graphify_name",
+      "github_workflows_graphify_permissions",
+      "github_workflows_graphify_permissions_contents",
+      "github_workflows_graphify_update_graph_runs_on"
     ],
     "3": [
       "phpmailer_phpmailer_exception",
@@ -38,9 +39,10 @@
       "public_devis_respond"
     ],
     "4": [
-      "github_workflows_graphify_jobs",
-      "github_workflows_graphify_jobs_update_graph",
-      "github_workflows_graphify_update_graph_runs_on"
+      "github_workflows_graphify_on",
+      "github_workflows_graphify_on_push",
+      "github_workflows_graphify_push_branches",
+      "github_workflows_graphify_push_paths_ignore"
     ],
     "5": [
       "public_assets_boot"
@@ -52,9 +54,9 @@
   "cohesion": {
     "0": 0.2222222222222222,
     "1": 0.25,
-    "2": 0.3333333333333333,
+    "2": 0.2857142857142857,
     "3": 0.3333333333333333,
-    "4": 0.6666666666666666,
+    "4": 0.5,
     "5": 1.0,
     "6": 1.0
   },
@@ -62,16 +64,11 @@
     {
       "id": "github_workflows_graphify_update_graph_steps",
       "label": "steps",
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "composer_require",
       "label": "require",
-      "degree": 3
-    },
-    {
-      "id": "github_workflows_graphify_on_push",
-      "label": "push",
       "degree": 3
     },
     {
@@ -80,18 +77,18 @@
       "degree": 3
     },
     {
+      "id": "github_workflows_graphify_on_push",
+      "label": "push",
+      "degree": 3
+    },
+    {
       "id": "composer_config",
       "label": "config",
       "degree": 2
     },
     {
-      "id": "github_workflows_graphify_on",
-      "label": "on",
-      "degree": 2
-    },
-    {
-      "id": "github_workflows_graphify_permissions",
-      "label": "permissions",
+      "id": "github_workflows_graphify_steps_env",
+      "label": "env",
       "degree": 2
     },
     {
@@ -105,27 +102,27 @@
       "degree": 2
     },
     {
-      "id": "composer_config_vendor_dir",
-      "label": "vendor-dir",
-      "degree": 1
+      "id": "github_workflows_graphify_permissions",
+      "label": "permissions",
+      "degree": 2
+    },
+    {
+      "id": "github_workflows_graphify_on",
+      "label": "on",
+      "degree": 2
     }
   ],
   "surprises": [],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `update-graph` connect `update-graph` to `steps`?",
-      "why": "High betweenness centrality (0.131) - this node is a cross-community bridge."
+      "question": "Why does `steps` connect `graphify.yml` to `steps`?",
+      "why": "High betweenness centrality (0.161) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `steps` connect `steps` to `update-graph`?",
-      "why": "High betweenness centrality (0.121) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `jobs` connect `update-graph` to `graphify.yml`?",
-      "why": "High betweenness centrality (0.121) - this node is a cross-community bridge."
+      "question": "Why does `update-graph` connect `steps` to `graphify.yml`?",
+      "why": "High betweenness centrality (0.150) - this node is a cross-community bridge."
     }
   ]
 }

@@ -4,12 +4,12 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 34 nodes · 29 edges · 7 communities (4 shown, 3 thin omitted)
+- 36 nodes · 31 edges · 7 communities (4 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `76f3112d`
+- Built from commit: `78e8f4d4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,16 +20,16 @@
 - update-graph
 
 ## God Nodes (most connected - your core abstractions)
-1. `steps` - 5 edges
+1. `steps` - 6 edges
 2. `require` - 3 edges
-3. `push` - 3 edges
-4. `update-graph` - 3 edges
+3. `update-graph` - 3 edges
+4. `push` - 3 edges
 5. `config` - 2 edges
-6. `on` - 2 edges
-7. `permissions` - 2 edges
-8. `with` - 2 edges
-9. `jobs` - 2 edges
-10. `vendor-dir` - 1 edges
+6. `env` - 2 edges
+7. `with` - 2 edges
+8. `jobs` - 2 edges
+9. `permissions` - 2 edges
+10. `on` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -45,15 +45,15 @@ Nodes (8): config, vendor-dir, description, name, require, php, phpmailer/phpmai
 
 ### Community 1 - "graphify.yml"
 Cohesion: 0.25
-Nodes (7): name, on, push, permissions, contents, branches, paths-ignore
+Nodes (8): GRAPHIFY_FORCE, env, name, run, uses, with, steps, fetch-depth
 
 ### Community 2 - "steps"
-Cohesion: 0.33
-Nodes (6): name, run, uses, with, steps, fetch-depth
+Cohesion: 0.29
+Nodes (6): jobs, update-graph, name, permissions, contents, runs-on
 
 ### Community 4 - "update-graph"
-Cohesion: 0.67
-Nodes (3): jobs, update-graph, runs-on
+Cohesion: 0.50
+Nodes (4): on, push, branches, paths-ignore
 
 ## Knowledge Gaps
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
@@ -61,9 +61,7 @@ Nodes (3): jobs, update-graph, runs-on
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `update-graph` connect `update-graph` to `steps`?**
-  _High betweenness centrality (0.131) - this node is a cross-community bridge._
-- **Why does `steps` connect `steps` to `update-graph`?**
-  _High betweenness centrality (0.121) - this node is a cross-community bridge._
-- **Why does `jobs` connect `update-graph` to `graphify.yml`?**
-  _High betweenness centrality (0.121) - this node is a cross-community bridge._
+- **Why does `steps` connect `graphify.yml` to `steps`?**
+  _High betweenness centrality (0.161) - this node is a cross-community bridge._
+- **Why does `update-graph` connect `steps` to `graphify.yml`?**
+  _High betweenness centrality (0.150) - this node is a cross-community bridge._
