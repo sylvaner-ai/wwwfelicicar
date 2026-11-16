@@ -1,34 +1,34 @@
 {
   ".claude/settings.json": {
-    "mtime": 1794851242.3065822,
-    "seen": 1794851242.9438546,
+    "mtime": 1794856913.6603215,
+    "seen": 1794856917.955167,
     "ast_hash": "8eafe95f2f857d090df6c04324b234d1",
     "semantic_hash": "8eafe95f2f857d090df6c04324b234d1",
     "ast_empty": true
   },
   "composer.json": {
-    "mtime": 1793461436.1822667,
-    "seen": 1794851242.943862,
+    "mtime": 1794856913.660981,
+    "seen": 1794856917.955177,
     "ast_hash": "21498e7bc32c263183a295b87e4b4cd6",
     "semantic_hash": "21498e7bc32c263183a295b87e4b4cd6"
   },
   "public/assets/main.js": {
-    "mtime": 1793461436.1842668,
-    "seen": 1794851242.9439404,
-    "ast_hash": "51b79da096e9483d4a86fa8e061e0f0c",
-    "semantic_hash": "51b79da096e9483d4a86fa8e061e0f0c"
+    "mtime": 1794856913.663922,
+    "seen": 1794856917.9551811,
+    "ast_hash": "cdc8af26efd181f361c0691f7fd397ac",
+    "semantic_hash": "cdc8af26efd181f361c0691f7fd397ac"
   },
   "public/devis.php": {
-    "mtime": 1793461436.1842668,
-    "seen": 1794851242.9440076,
+    "mtime": 1794856913.663922,
+    "seen": 1794856917.9551826,
     "ast_hash": "31ddd08b42fd562cb139c4de63428726",
     "semantic_hash": "31ddd08b42fd562cb139c4de63428726"
   },
   ".github/workflows/graphify.yml": {
-    "mtime": 1794851278.97233,
-    "seen": 1794854842.9650648,
-    "ast_hash": "4129947e44fef507f572f3dec1661b96",
-    "semantic_hash": ""
+    "mtime": 1794856913.660981,
+    "seen": 1794856917.9551737,
+    "ast_hash": "9e351499c08fb2659fc2208f0299b834",
+    "semantic_hash": "9e351499c08fb2659fc2208f0299b834"
   },
   "CLAUDE.md": {
     "mtime": 1794851278.97233,
@@ -72,10 +72,10 @@
     "ast_hash": "46005beafbc7ebcaeecbe852f3667123",
     "semantic_hash": ""
   },
-  "public/assets/img/parking-aerien.jpg": {
-    "mtime": 1793461436.1842668,
-    "seen": 1794854842.9650903,
-    "ast_hash": "74127b4a63ad82403d70638ba69ee0ea",
-    "semantic_hash": ""
+  "public/assets/boot.js": {
+    "mtime": 1794856913.6626546,
+    "seen": 1794856917.955179,
+    "ast_hash": "05cb8b055fa3e181ff2fc719c6e56a83",
+    "semantic_hash": "05cb8b055fa3e181ff2fc719c6e56a83"
   }
 }
