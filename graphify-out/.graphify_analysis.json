@@ -1,0 +1,69 @@
+{
+  "communities": {
+    "0": [
+      "composer",
+      "composer_config",
+      "composer_config_vendor_dir",
+      "composer_description",
+      "composer_name",
+      "composer_type"
+    ],
+    "1": [
+      "phpmailer_phpmailer_exception",
+      "phpmailer_phpmailer_phpmailer",
+      "public_devis",
+      "public_devis_closure_1",
+      "public_devis_field",
+      "public_devis_respond"
+    ],
+    "2": [
+      "composer_require",
+      "composer_require_php",
+      "composer_require_phpmailer_phpmailer"
+    ],
+    "3": [
+      "public_assets_main"
+    ]
+  },
+  "cohesion": {
+    "0": 0.3333333333333333,
+    "1": 0.3333333333333333,
+    "2": 0.6666666666666666,
+    "3": 1.0
+  },
+  "gods": [
+    {
+      "id": "composer_require",
+      "label": "require",
+      "degree": 3
+    },
+    {
+      "id": "composer_config",
+      "label": "config",
+      "degree": 2
+    },
+    {
+      "id": "composer_config_vendor_dir",
+      "label": "vendor-dir",
+      "degree": 1
+    },
+    {
+      "id": "composer_require_php",
+      "label": "php",
+      "degree": 1
+    },
+    {
+      "id": "composer_require_phpmailer_phpmailer",
+      "label": "phpmailer/phpmailer",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `require` connect `Community 2` to `Community 0`?",
+      "why": "High betweenness centrality (0.124) - this node is a cross-community bridge."
+    }
+  ]
+}
